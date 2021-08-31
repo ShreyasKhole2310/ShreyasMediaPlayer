@@ -49,7 +49,7 @@ class SongListViewModel(application: Application) : AndroidViewModel(application
                 getSongsfromDB()
 
             } else {
-                dataUpdates?.updateSongStored(true)
+                dataUpdates?.updateSongStored(false)
                 dataUpdates?.showError("Error", response.message.toString())
             }
         }
